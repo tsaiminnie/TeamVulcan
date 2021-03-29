@@ -1,0 +1,46 @@
+#customized {
+    margin: 8rem 4rem;
+}
+
+
+.customized-text {
+    text-align: center;
+    font-family: $font-body;
+}
+
+.customized-text h2 {
+    @include font-header;
+}
+
+.customized-flex-section {
+    margin-top: 2rem;
+    @include flex-center;
+}
+
+.machine {
+    display: flex;
+}
+
+.machine-title {
+    margin-left: 1rem;
+    align-self: center;
+}
+
+.machine-link {
+    display: none;
+}
+
+.machine:nth-child(2) {
+border-top: 1px solid grey;
+border-bottom: 1px solid grey;
+}
+
+.machine:nth-child(3){
+border-bottom: 1px solid grey;
+}
+
+@media (min-width: $breakpoint-tablet){
+    .machine:nth-child(2), .machine:nth-child(3) {
+        border: none;
+    }
+}
