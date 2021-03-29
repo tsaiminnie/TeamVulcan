@@ -1,6 +1,13 @@
 // Colors
 $colors: (
     light-blue: #009ddc,
-    dark-blue: #154a66
-    light-grey: #ccd2dd
-)
+    dark-blue: #154a66,
+    light-grey: #ccd2dd,
+    dark-grey: #595b5f,
+    bright-white: #ffffff
+);
+
+//Media Query Breakpoints
+$breakpoint-mobile: 500px;
+$breakpoint-tablet: 750px;
+$brekpoint-desktop: 1000px;
