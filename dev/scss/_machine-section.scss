@@ -1,16 +1,22 @@
-#customized {
-    margin: 8rem 4rem;
-}
-
-
 .customized-text {
     text-align: center;
-    font-family: $font-body;
 }
 
 .customized-text h2 {
-    @include font-header;
+    color: map-get($colors, dark-grey);
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 2rem;
+    position: relative;
+    z-index: 100;
 }
+
+.customized-text p {
+    margin-top: 1rem;
+    font-family: $font-body;
+}
+
 
 .customized-flex-section {
     margin-top: 2rem;
@@ -19,9 +25,14 @@
 
 .machine {
     display: flex;
+    padding: 1rem;
 }
 
 .machine-title {
+    color: map-get($colors, dark-grey);
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-size: 1.5em;
     margin-left: 1rem;
     align-self: center;
 }
