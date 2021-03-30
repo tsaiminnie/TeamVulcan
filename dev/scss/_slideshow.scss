@@ -3,6 +3,13 @@
     position: relative;
     margin: auto;
 
+    h1 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .prev,
     .next {
         cursor: pointer;
@@ -31,6 +38,8 @@
 
     .img {
         vertical-align: middle;
+        height: 100rem;
+        width: auto;
     }
 
     .mySlides {
@@ -54,9 +63,9 @@
 
     .fade {
         -webkit-animation-name: fade;
-        -webkit-animation-duration: 2s;
+        -webkit-animation-duration: 4s;
         animation-name: fade;
-        animation-duration: 2s;
+        animation-duration: 4s;
         }
 
     @-webkit-keyframes fade {

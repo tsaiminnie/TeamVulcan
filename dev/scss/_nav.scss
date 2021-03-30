@@ -25,6 +25,7 @@ nav {
         margin: 0;
         list-style: none;
         background-color: map-get($colors, dark-grey);
+        z-index: 2;
     }
 
 }
