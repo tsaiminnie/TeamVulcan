@@ -1,9 +1,12 @@
 nav {
-    width: 50%;
+    width: 100%;
     height: 0;
     visibility: hidden;
     overflow: hidden;
     margin: 0 auto;
+    top: 6rem;
+    position: absolute;
+    padding-bottom: 1rem;
 
     a {
         text-decoration: none;
@@ -12,14 +15,18 @@ nav {
         padding: 0 20px;
         display: block;
         width: 100%;
+        font-family: $font-body;
+        line-height: 1.4;
+        font-size: 1.5rem;
     }
 
     ul {
-        padding: 0;
+        padding-bottom: 1rem;
         margin: 0;
         list-style: none;
+        background-color: map-get($colors, dark-grey);
     }
-    
+
 }
 
 nav.activated {
