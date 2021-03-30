@@ -18,8 +18,12 @@
 
 
 .about-us-info {
+    padding-left: 2rem;
+    padding-right: 2rem;
     text-align: center;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
 .about-us h1{
@@ -28,7 +32,7 @@
     font-size: 1.7em;
     color: white;
     position: absolute;
-    top: 30%;
+    top: 5rem;
 }
 
 .about-us p{
@@ -36,9 +40,22 @@
     font-weight: 400;
     color: white;
     position: absolute;
-    top: 50%;
+    top: 17rem;
 }
 
 .about-us button{
+            width: auto;
+            height: 4rem;
+            padding: 0.5rem 2rem;
+            text-transform: uppercase;
+            font-size: 1rem;
+            font-family: $font-header;
+            background: transparent;
+            margin: 0.5rem auto;
+            border: 2px solid rgb(255, 255, 255);
+            color: rgb(255, 255, 255);
+            position: absolute;
+            top: 22rem;
 
+            
 }
