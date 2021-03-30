@@ -34,10 +34,6 @@
 				</span>
 			</button>
 
-			<!-- <div class="menu-btn">
-				<div class="burger-btn"></div>
-			</div> -->
-
 			<nav>
 				<ul id="main-navigation">
 					<li><a href="#">About</a></li>
@@ -53,9 +49,36 @@
 	</header>
 
 	<main>
-		<article>
-			<p>We design and fabricate indestructible wastewater screens. Enough said.</p>
+		
+		<h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
 
+		<div class="slideshow-container">
+			<div class="mySlides fade">
+				<img src="images/header-slider-img-01.jpg" style="width:100%">
+				<!-- <div class="dot"></div> -->
+			</div>
+
+			<div class="mySlides fade">
+				<img src="images/header-slider-img-02.jpg" style="width:100%">
+				<!-- <div class="dot"></div> -->
+			</div>
+
+			<div class="mySlides fade">
+				<img src="images/header-slider-img-03.jpg" style="width:100%">
+				<!-- <div class="dot"></div> -->
+			</div>
+		
+
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		<div style="text-align: center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+</div>
+		<article class="view-buttons">
 			<button>View Products</button>
 			<button>View Services</button>
 		</article>
