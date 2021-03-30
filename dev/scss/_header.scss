@@ -1,3 +1,11 @@
 header {
     background-color: map-get($colors , dark-grey);
+    height: 6rem;
+    display: flex;
+
+    img {
+        width: 10rem;
+        height: auto;
+        padding: 1rem;
+    }
 }
