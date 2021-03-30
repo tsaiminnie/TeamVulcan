@@ -1,0 +1,44 @@
+.about-us {
+    position: relative;
+}
+
+
+.about-us-image {
+    height: 70vh;
+    width: 100vw;
+    object-fit:cover;
+}
+
+.about-us-overlay {
+    height: 70vh;
+    width: 100vw;
+    color: map-get($colors, light-blue);
+    z-index: 100;
+}
+
+
+.about-us-info {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about-us h1{
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    color: white;
+    position: absolute;
+    top: 30%;
+}
+
+.about-us p{
+    font-family: $font-body;
+    font-weight: 400;
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+.about-us button{
+
+}
