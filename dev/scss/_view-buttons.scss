@@ -1,0 +1,17 @@
+.view-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    button {
+        width: auto;
+        height: 4rem;
+        padding: 0.75rem;
+        font-size: 2rem;
+        font-family: $font-header;
+        background: transparent;
+        margin: 0.5rem auto;
+        border: 2px solid black;
+        color: red;
+    }
+}
