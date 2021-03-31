@@ -6,26 +6,27 @@
 
     button {
         width: auto;
-        height: 4rem;
-        padding: 0.75rem;
-        font-size: 2rem;
-        font-family: $font-header;
+        height: 3rem;
+        padding: auto 1.5rem;
+        font-size: 1.25rem;
+        font-family: $font-body;
+        text-transform: uppercase;
         background: transparent;
-        margin: 0.5rem auto;
-        border: 2px solid map-get($colors, bright-white);
+        margin: 0 auto;
+        border: 1px solid map-get($colors, bright-white);
         color: map-get($colors, bright-white);
         position: absolute;
         
     }
 
     .view-products {
-        bottom: 30%;
+        bottom: 28%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .view-services {
-        bottom: 12%;
+        bottom: 15%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
