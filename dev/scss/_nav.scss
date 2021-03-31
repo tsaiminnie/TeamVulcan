@@ -49,3 +49,29 @@ nav.activated {
     visibility: visible;
     height: 253px;
 }
+
+@media screen and (min-width: $breakpoint-tablet) {
+    nav {
+        visibility: visible;
+        height: 2rem;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    a {
+        font-size: 1rem;
+    }
+
+    .dissapear {
+        display: none;
+    }
+
+    
+
+}

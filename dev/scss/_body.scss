@@ -8,12 +8,15 @@ body {
         z-index: 1;
         padding-bottom: 5rem;
         font-family: $font-header;
-        font-size: 1.5rem;
+        font-size: 1.75rem;
     }
 
     .slideImage {
         height: 30rem;
-        width: auto;
+        // width: auto;
         overflow: hidden;
+        object-fit: cover;
+        height: 60vh;
+        display: block;
     }
 }

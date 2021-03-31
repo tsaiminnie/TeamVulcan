@@ -20,14 +20,22 @@
     }
 
     .view-products {
-        bottom: 28%;
+        bottom: 40%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     .view-services {
-        bottom: 15%;
+        bottom: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
+
+    // @media screen and (min-width: $breakpoint-tablet) {
+
+    //     .view-buttons {
+    //         display: flex;
+    //         flex-wrap: nowrap;
+    //     }
+    // }
 }

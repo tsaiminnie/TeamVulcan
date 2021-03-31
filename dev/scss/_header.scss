@@ -2,10 +2,60 @@ header {
     background-color: map-get($colors, dark-grey);
     height: 5rem;
     display: flex;
+    position: absolute;
+    z-index: 10;
+    width: 100%;
 
     img {
         width: 7rem;
         height: auto;
         padding: 1rem;
     }
+
+    .left {
+        visibility: collapse;
+    }
+    .right{
+        visibility: collapse;
+    }
+
 }
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .navbar {
+        background: none;
+    }
+    .logo {
+        margin: 0 auto;
+    }
+
+    header img {
+        width: 10rem;
+        height: auto;
+    }
+
+    div.left {
+        visibility: visible;
+        display: flex;
+        padding: 1rem;
+        z-index: 1000;
+        position: absolute;
+        left: 0;
+    }
+    div.right{
+        visibility: visible;
+        display: flex;
+        padding: 1rem;
+        position: absolute;
+        right: 0;
+    }
+
+    .lg-nav a {
+        font-family: $font-body;
+        color: map-get($colors, bright-white);
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 1rem;
+    }
+}
+
