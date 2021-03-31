@@ -1,0 +1,78 @@
+.map-flex-item{
+    position: relative;
+    text-align: center;
+}
+
+
+.map-image {
+    height: 40vh;
+    width: 100vw;   
+}
+
+.map-text{
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    right: 0;
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    color: #000000;
+}
+
+.map-button{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    width: 15rem;
+    height: 4rem;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: $font-header;
+    background: transparent;
+    margin: 0.5rem auto;
+    border: 2px solid #000000;
+    color: #000000;
+}
+
+
+
+.contact-flex-item {
+        position: relative;
+        background-color: map-get($colors, dark-blue);
+        height: 40vh;
+        width: 100vw;
+        text-align: center;
+        margin: 0 auto;
+}
+
+.contact-text{
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    right: 0;
+    font-family: $font-header;
+    text-transform: uppercase;
+    font-size: 1.7em;
+    color: #ffffff;
+}
+
+.contact-button{
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    right: 0;
+    width: 10rem;
+    height: 4rem;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: $font-header;
+    background: transparent;
+    margin: 0.5rem auto;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    
+}
