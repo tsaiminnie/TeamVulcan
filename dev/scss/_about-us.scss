@@ -9,12 +9,26 @@
     object-fit:cover;
 }
 
-.about-us-overlay {
-    height: 70vh;
-    width: 100vw;
-    color: map-get($colors, light-blue);
-    z-index: 100;
-}
+// .about-us-overlay {
+//     position: absolute;
+//     width: 100vw;
+//     height: 70vh;
+//     left: 0;
+//     background: rgba(0, 0, 0, 0.8);
+//     z-index: 1000;
+// }
+
+// .about-us-image:after {
+//     content: " ";
+//     height: 70vh;
+//     display: block;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     background: rgba(0, 0, 0, 0.5);
+//     z-index: 1000;
+//     position: absolute;
+// }
 
 
 .about-us-info {
