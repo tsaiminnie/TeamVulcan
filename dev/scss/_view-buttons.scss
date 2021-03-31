@@ -1,7 +1,8 @@
 .view-buttons {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    // flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     button {
         width: auto;
@@ -11,7 +12,21 @@
         font-family: $font-header;
         background: transparent;
         margin: 0.5rem auto;
-        border: 2px solid black;
-        color: red;
+        border: 2px solid map-get($colors, bright-white);
+        color: map-get($colors, bright-white);
+        position: absolute;
+        
+    }
+
+    .view-products {
+        bottom: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .view-services {
+        bottom: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
