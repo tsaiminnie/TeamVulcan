@@ -30,30 +30,6 @@ function removeTransition(e) {
 
 //Header Slideshow
 
-// var dots = document.getElementsByClassName("dot");
-
-// function showSlides(dots) {
-//     let slideIndex = 0;  
-//     let slides = document.getElementsByClassName("mySlides");
-    
-
-//     for (let i = 0; i < slides.length; i++) {
-//         slides[i].style.display = "none";
-//         console.log('sliding');
-//     }
-//     slideIndex++;
-//     if (slideIndex > slides.length) {slideIndex = 1}
-//     for (let i = 0; i < dots.length; i++) {
-//         dots[i].className = dots[i].className.replace("active", "");
-//         console.log('slidinggggggggggg');
-//     }
-//     slides[slideIndex-1].className.display = "block";
-//     dots[slideIndex-1].className += "active";
-//     setTimeout(showSlides(dots), 3000);
-// }
-
-// showSlides(dots);
-
 let slideIndex = 1;
 showSlides();
 
