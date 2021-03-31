@@ -3,10 +3,10 @@
 }
 
 .customized-text h2 {
+    margin-top: 8rem;
     color: map-get($colors, dark-grey);
     font-family: $font-header;
     text-transform: uppercase;
-    font-weight: 700;
     font-size: 2rem;
     position: relative;
     z-index: 100;
@@ -48,6 +48,10 @@ border-bottom: 1px solid grey;
 
 .machine:nth-child(3){
 border-bottom: 1px solid grey;
+}
+
+.machine:last-child{
+    margin-bottom: 4rem;
 }
 
 @media (min-width: $breakpoint-tablet){
