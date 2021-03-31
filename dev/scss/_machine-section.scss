@@ -25,15 +25,37 @@
 
 .machine {
     display: flex;
-    padding: 1rem;
+    // padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
+
+.machine-image {
+    width: 50%;
+}
+
+@media (max-width: 375px){
+    .img-machine {
+        width: 200px;
+    }
+
+}
+.machine-info {
+    width: 50%;
+}
+
+// .img-machine {
+//     width: 200px;
+// }
 
 .machine-title {
     color: map-get($colors, dark-grey);
     font-family: $font-header;
     text-transform: uppercase;
     font-size: 1.5em;
-    margin-left: 1rem;
+    width: auto;
+    // margin-left: 1rem;
     align-self: center;
 }
 

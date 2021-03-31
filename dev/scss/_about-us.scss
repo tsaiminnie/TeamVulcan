@@ -5,8 +5,11 @@
 .about-us-image {
     height: 70vh;
     width: 100vw;
-    object-fit: cover;
+    object-fit:cover;
+    display: block;
+
 }
+
 
 // .about-us-overlay {
 //     position: absolute;
