@@ -7,6 +7,7 @@ nav {
     top: 6rem;
     position: absolute;
     padding-bottom: 1rem;
+    z-index: 2;
 
     a {
         text-decoration: none;
@@ -20,18 +21,27 @@ nav {
         font-size: 1.5rem;
     }
 
+    a:hover {
+        background-color: map-get($colors, light-blue);
+    }
+
     ul {
         padding-bottom: 1rem;
         margin: 0;
         list-style: none;
         background-color: map-get($colors, dark-grey);
-        z-index: 2;
+
+    }
+
+    .main-navigation {
+        transition: top 600ms cubic-bezier(0, 1, 0.5, 1);
+        position: relative;
     }
 
 }
 
 nav.activated {
-    transition: height 0.3s ease, visibilty 0s 0.3s;
+    transition: height 0.3s ease, visibility 0s;
 }
 
 .show nav {
