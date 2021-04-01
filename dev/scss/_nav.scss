@@ -4,21 +4,22 @@ nav {
     visibility: hidden;
     overflow: hidden;
     margin: 0 auto;
-    top: 6rem;
+    top: 5rem;
     position: absolute;
     padding-bottom: 1rem;
     z-index: 2;
+    transition: all .25s ease-in-out;
 
     a {
         text-decoration: none;
         color: map-get($colors, bright-white);
         text-transform: uppercase;
-        padding: 0 20px;
+        padding: 0.25rem 1rem;
         display: block;
         width: 100%;
         font-family: $font-body;
         line-height: 1.4;
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     a:hover {
@@ -34,7 +35,6 @@ nav {
     }
 
     .main-navigation {
-        transition: top 600ms cubic-bezier(0, 1, 0.5, 1);
         position: relative;
     }
 
@@ -45,7 +45,7 @@ nav.activated {
 }
 
 .show nav {
-    transition: height 0.3s ease, visibility 0s 0.3s;
+    transition: all .25s ease-in-out;
     visibility: visible;
     height: 253px;
 }
@@ -53,25 +53,28 @@ nav.activated {
 @media screen and (min-width: $breakpoint-tablet) {
     nav {
         visibility: visible;
-        height: 2rem;
-        width: 90%;
-        margin: 0 auto;
+        height: 10rem;
+        position: absolute;
+        width: 100%;
     }
 
     ul {
         display: flex;
         justify-content: space-around;
+    }
 
+    #main-navigation {
+        margin: 1rem auto;
+        width: 50rem;
+        padding: 0.75rem;
     }
 
     a {
         font-size: 1rem;
+        padding: 0.25rem none;
     }
 
     .dissapear {
         display: none;
     }
-
-    
-
 }

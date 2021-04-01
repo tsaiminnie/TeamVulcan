@@ -6,17 +6,29 @@ body {
         text-transform: uppercase;
         color: map-get($colors, bright-white);
         z-index: 1;
-        padding-bottom: 5rem;
+        padding: 5rem 0;
         font-family: $font-header;
-        font-size: 1.75rem;
+        font-size: 1.5rem;
     }
 
     .slideImage {
-        height: 30rem;
+        // height: 30rem;
         // width: auto;
-        overflow: hidden;
+        // overflow: hidden;
         object-fit: cover;
-        height: 60vh;
+        height: 35.75rem;
         display: block;
+        padding: 0;
     }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    body {
+
+    
+    .slideImage {
+        height: 40rem;
+    }
+
+}
 }
