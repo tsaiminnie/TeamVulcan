@@ -1,8 +1,4 @@
 .view-buttons {
-    display: flex;
-    // flex-direction: column;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
 
     button {
         width: auto;
@@ -16,11 +12,10 @@
         border: 1px solid map-get($colors, bright-white);
         color: map-get($colors, bright-white);
         position: absolute;
-        
     }
 
     .view-products {
-        bottom: 40%;
+        bottom: 35%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -30,12 +25,28 @@
         left: 50%;
         transform: translate(-50%, -50%);
     }
-
-    // @media screen and (min-width: $breakpoint-tablet) {
-
-    //     .view-buttons {
-    //         display: flex;
-    //         flex-wrap: nowrap;
-    //     }
-    // }
 }
+
+    @media screen and (min-width: $breakpoint-tablet) {
+
+        article.view-buttons {
+            // display: inline-block;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-top: 2rem;
+        
+        .view-products {
+            // bottom: 25%;
+            // left: 50%;
+            // transform: translate(-30%, -30%);
+        }
+    
+        .view-services {
+            // bottom: 20rem;;
+            // left: 30%;
+            // transform: translate(-50%, -50%);
+        }
+    }
+    }
+    
