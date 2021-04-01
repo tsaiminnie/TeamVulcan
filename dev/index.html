@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Vulcan</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulcan</title>
 
-	<!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
-	<!-- Put Google Fonts Here -->
-	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
-	<!-- end Google Fonts -->
+    <!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
+    <!-- Put Google Fonts Here -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- end Google Fonts -->
 
-	<!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-	<link rel="stylesheet" href="styles/styles.css?cb=1617237400630">
-
+    <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+    <link rel="stylesheet" href="styles/styles.css?cb=1617233275533">
 </head>
+
 <body>
+
+    <header class="navbar">
+        <!-- <h1>Vulcan</h1> -->
+        <!-- Hunter -->
+        <!-- Logo and Nav -->
+        <!-- Hamburger menu(js) -->
+        <div class="logo">
+            <img src="images/logo-white-vulcan.svg" alt="Vulcan's main logo">
+        </div>
+        <!-- background image -->
+
+        <button id="button-menu" class="button-menu">
 
 	<header class="navbar">
 
@@ -24,11 +37,13 @@
 			</div>
 			
 			<button id="button-menu" class="button-menu">
+
 				<span class="button-content">
 					<span class="text">Menu</span>
 					<span class="bar"></span>
 				</span>
 			</button>
+
 
 			<nav>
 				<ul id="main-navigation">
@@ -99,13 +114,7 @@
 
 	<div class = "machine">
 		<div class = "machine-image">
-			<img class = "img-machine" srcset="images/machine-01-300x274.png 300w,
-			images/machine-01-768x702.png 768w,
-			images/machine-01-912x834.png 912w"
-			sizes = "(max-width: 500px) calc(100vw - 60px), 300px, 
-			(max-width: 750px) calc(100vw - 60px), 768px
-			(max-width: 1000px) calc(100vw - 60px), 912px"
-			src = "images/machine-01-300x274.png"
+			<img src = "images/machine-01-300x274.png"
 			alt = "Machine01">
 		</div>
 		<div class = "machine-info">
@@ -116,13 +125,7 @@
 
 	<div class = "machine">
 		<div class = "machine-image">
-		<img class = "img-machine" srcset="images/machine-02-300x274.png 300w,
-		images/machine-02-768x702.png 768w,
-		images/machine-02-912x834.png 912w"
-		sizes = "(max-width: 500px) calc(100vw - 60px), 300px, 
-		(max-width: 750px) calc(100vw - 60px), 768px
-		(max-width: 1000px) calc(100vw - 60px), 912px"
-		src = "images/machine-02-300x274.png"
+		<img src = "images/machine-02-300x274.png"
 		alt = "Machine02">
 	</div>
 	<div class = "machine-info">
@@ -133,13 +136,7 @@
 
 	<div class = "machine">
 		<div class = "machine-image">
-		<img class = "img-machine" srcset="images/machine-03-300x274.png 300w,
-		images/machine-03-768x702.png 768w,
-		images/machine-03-912x834.png 912w"
-		sizes = "(max-width: 500px) calc(100vw - 60px), 300px, 
-		(max-width: 750px) calc(100vw - 60px), 768px
-		(max-width: 1000px) calc(100vw - 60px), 912px"
-		src = "images/machine-03-300x274.png"
+		<img src = "images/machine-03-300x274.png"
 		alt = "Machine03">
 	</div>
 	<div class = "machine-info">
@@ -150,13 +147,7 @@
 
 	<div class = "machine">
 		<div class = "machine-image">
-		<img class = "img-machine" srcset="images/machine-04-300x274.png 300w,
-		images/machine-04-768x702.png 768w,
-		images/machine-04-912x834.png 912w"
-		sizes = "(max-width: 500px) calc(100vw - 60px), 300px, 
-		(max-width: 750px) calc(100vw - 60px), 768px
-		(max-width: 1000px) calc(100vw - 60px), 912px"
-		src = "images/machine-04-300x274.png"
+		<img src = "images/machine-04-300x274.png"
 		alt = "Machine04">
 	</div>
 	<div class = "machine-info">
@@ -169,13 +160,14 @@
 
 
 		<section>
-
 			<div class = "dark-blue-wave"><img src="images/wave-blue-dark.png" alt="Dark blue wave"></div>
+		
 		<!-- Andre -->
 			<!-- product advisor section -->
 			
 			<h2>Product Advisor</h2>
             <p>Find your project’s perfect fit.</p>
+
             <form action="/action_page.php">
                 <label for="select">PRODUCT TYPE</label>
                 <select name="select" id="select">
@@ -227,10 +219,11 @@
                 <br><br>
             </form>
 
-			<!-- forms -->
+            <!-- forms -->
 
-			<button>Find My Product</button>
-		</section>
+            <button>Find My Product</button>
+        </section>
+
 
 		<section class = "about-us">
 			<!-- about us section -->
@@ -269,21 +262,35 @@
 			</div>
 		</section>
 
+		
+		<div class = "light-blue-wave"><img src="images/wave-blue-light.png" alt="Light blue wave"></div>
+		
 	</main>
 
 	<footer>
-		<!-- add logo -->
-		<!-- add social icons -->
-		<p>+1 712-642-2755</p>
-		<p>Contact Us</p>
-		<p>Copyright 2017. All rights reserved</p>
+		<div class="logo">
+			<img src="images/logo-white-vulcan.svg" alt="Vulcan's main logo">
+		</div>
+		<div class = "footer-info">
+		<div class="social">
+			<img src="images/icon-white-facebook.png" alt="Facebook logo">
+			<img src="images/icon-white-linkedin.png" alt="LinkedIn logo">
+		</div>
+		<div class="phone"><p>+1 712-642-2755</p></div>
+		<div class="contact-us"></div><p>Contact Us</p></div>
+		<p class = "copyright">Copyright 2017. All rights reserved</p>
+		</div>
 	</footer>
 
 
 <!-- *** IMPORTANT *** If you do not require the jQuery Library then feel free to delete the next line -->
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
+
 <script src="scripts/script.min.js?cb=1617237400630"></script>
+
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
+
 </body>
+
 </html>

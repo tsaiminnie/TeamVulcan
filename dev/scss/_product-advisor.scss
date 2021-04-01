@@ -1,0 +1,66 @@
+
+button {
+        width: 100%;
+        
+        height: 5rem;
+        padding: auto 1.5rem;
+        font-size: 2rem;
+        font-family: $font-header;
+        text-transform: uppercase;
+        background: map-get($colors, cerulean-blue);
+        margin: 0 auto;
+        color: map-get($colors, bright-white);
+        border: solid white 1px;
+        
+
+        position: relative;
+        
+    }
+
+.form-header{
+    font-family: $font-header;
+    font-size: 2rem;
+    text-align: center;
+    color: map-get($colors, bright-white);
+
+}
+.form-p{
+    font-size: 1rem;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.form {
+font-family: $font-header;
+   padding: 5rem;
+   background-color: #154a66;
+   font-size: 1rem;
+   text-align: left;
+   color: map-get($colors, bright-white);
+   font-weight: bold;
+   
+}
+
+    
+select{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 100%;
+    font-size: 1rem;    
+    font-family: $font-header;
+    text-align: center;
+    height: 5rem;
+    margin-top: 2%;
+}
+    
+select:hover,
+select:focus{
+    background-color: gray;
+
+}
+    
+
+
+
+
