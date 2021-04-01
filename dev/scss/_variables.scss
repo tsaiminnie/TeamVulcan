@@ -9,10 +9,13 @@ $colors: (
     dark-blue: #154a66,
     light-grey: #cbd1dc,
     dark-grey: rgba(78, 80, 83, 0.8),
-    bright-white: #ffffff
+    bright-white: #ffffff,
+    cerulean-blue:#2a52be
+    
 );
 
 //Media Query Breakpoints
 $breakpoint-mobile: 500px;
 $breakpoint-tablet: 750px;
 $brekpoint-desktop: 1000px;
+
