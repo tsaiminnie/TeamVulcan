@@ -1,9 +1,15 @@
+#customized {
+    margin: 2rem;
+}
+
 .customized-text {
     text-align: center;
+    max-width: 50rem;
+    margin: 0 auto;
 }
 
 .customized-text h2 {
-    margin-top: 8rem;
+    // margin-top: 8rem;
     color: map-get($colors, dark-grey);
     font-family: $font-header;
     text-transform: uppercase;
@@ -20,24 +26,41 @@
 
 .customized-flex-section {
     margin-top: 2rem;
-    @include flex-center;
+    margin: 0 auto;
+    max-width: 90%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: space-evenly;
+
 }
 
 .machine {
+    max-width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 2rem;
+    // position: relative;
 }
 
-// .machine-image {
-//     width: 50%;
-// }
+.machine-image {
+    // margin-right: 2rem;
+    // width: 25%;
+}
 
 
-// .machine-info {
-//     width: 50%;
-// }
+.machine-info {
+    // margin-left: 2rem;
+}
+
+.machine-image img {
+    width: 70%;
+}
+
+
+
 
 // .img-machine {
 //     width: 200px;
@@ -47,7 +70,7 @@
     color: map-get($colors, dark-grey);
     font-family: $font-header;
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 4vw;
     width: auto;
     // margin-left: 1rem;
     align-self: center;
@@ -71,6 +94,20 @@ border-bottom: 1px solid grey;
 }
 
 @media (min-width: $breakpoint-tablet){
+    .customized-flex-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    }
+
+    .machine {
+    width: 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+
     .machine:nth-child(2), .machine:nth-child(3) {
         border: none;
     }
