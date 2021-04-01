@@ -19,7 +19,8 @@ input {
     color: map-get($colors, bright-white);
 }
 
-.form-p {
+
+.form-p{
     font-size: 1rem;
     margin-bottom: 10%;
     text-align: center;
@@ -73,12 +74,15 @@ input {
 }
 
 .form {
-    font-family: $font-header;
-    background-color: #154a66;
-    font-size: 1rem;
-    text-align: left;
-    color: map-get($colors, bright-white);
-    font-weight: bold;
+
+font-family: $font-header;
+   padding: 5rem;
+   background-color: #154a66;
+   font-size: 1rem;
+   text-align: left;
+   color: map-get($colors, bright-white);
+   font-weight: bold;  
+
 }
 
 select {
