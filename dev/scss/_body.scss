@@ -19,15 +19,32 @@ body {
         display: block;
         padding: 0;
     }
+
+    iframe {
+        max-width: 100%;
+    }
+
+
 }
+
+@media screen and (min-width: $breakpoint-tablet) {
+    body {
+        .slideImage {
+            height: 40rem;
+        }
+    }
+
+}
+
 
 @media screen and (min-width: $breakpoint-tablet) {
     body {
 
     
-    .slideImage {
-        height: 40rem;
+        h1 {
+            font-size: 2rem;
+        }
+
     }
 
-}
 }
