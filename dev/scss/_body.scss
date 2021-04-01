@@ -19,6 +19,7 @@ body {
         display: block;
         padding: 0;
     }
+
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
@@ -30,4 +31,15 @@ body {
     }
 
 }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    body {
+
+    
+        h1 {
+            font-size: 2rem;
+        }
+
+    }
 }

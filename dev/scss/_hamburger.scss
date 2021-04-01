@@ -1,5 +1,5 @@
 .button-menu {
-    margin: 1rem;
+    margin: 0.5rem;
     display: block;
     width: 60px;
     background-color: transparent;
@@ -7,58 +7,60 @@
     padding: none;
     position: absolute;
     right: 0;
-    top: 0.75rem;
+
+
+    .button-content {
+        display: block;
+        height: 30px;
+        cursor: pointer;
+        padding: 0;
+    }
+
+    .text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        border: 0;
+    }
+
+    .bar {
+        display: block;
+        height: 4px;
+        background-color: map-get($colors, bright-white);
+        width: 100%;
+        position: relative;
+        top: 10px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .bar:before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        top: 10px;
+        left: 0;
+        background-color: map-get($colors, bright-white);
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .bar:after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        top: -10px;
+        left: 0;
+        background-color: map-get($colors, bright-white);
+        position: absolute;
+        transition: all 0.3s ease-in-out;
+    }
+
 }
 
-.button-menu .button-content {
-    display: block;
-    height: 30px;
-    cursor: pointer;
-    padding: 0;
-}
-
-.button-menu .text {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.button-menu .bar {
-    display: block;
-    height: 4px;
-    background-color: map-get($colors, bright-white);
-    width: 100%;
-    position: relative;
-    top: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.button-menu .bar:before {
-    content: "";
-    width: 100%;
-    height: 4px;
-    top: 10px;
-    left: 0;
-    background-color: map-get($colors, bright-white);
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
-
-.button-menu .bar:after {
-    content: "";
-    width: 100%;
-    height: 4px;
-    top: -10px;
-    left: 0;
-    background-color: map-get($colors, bright-white);
-    position: absolute;
-    transition: all 0.3s ease-in-out;
-}
 
 .button-menu:focus {
     outline: none;

@@ -4,7 +4,7 @@ nav {
     visibility: hidden;
     overflow: hidden;
     margin: 0 auto;
-    top: 5rem;
+    top: 4.85rem;
     position: absolute;
     padding-bottom: 1rem;
     z-index: 2;
@@ -64,7 +64,7 @@ nav.activated {
     }
 
     #main-navigation {
-        margin: 1rem auto;
+        margin: 3rem auto;
         width: 50rem;
         padding: 0.75rem;
     }
@@ -76,5 +76,11 @@ nav.activated {
 
     .dissapear {
         display: none;
+    }
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    #main-navigation {
+        margin: 5rem auto;
     }
 }
