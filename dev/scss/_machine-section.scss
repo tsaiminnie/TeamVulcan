@@ -25,25 +25,19 @@
 
 .machine {
     display: flex;
-    // padding: 1rem;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 100%;
+    margin-top: 2rem;
 }
 
-.machine-image {
-    width: 50%;
-}
+// .machine-image {
+//     width: 50%;
+// }
 
-@media (max-width: 375px){
-    .img-machine {
-        width: 200px;
-    }
 
-}
-.machine-info {
-    width: 50%;
-}
+// .machine-info {
+//     width: 50%;
+// }
 
 // .img-machine {
 //     width: 200px;
@@ -73,11 +67,25 @@ border-bottom: 1px solid grey;
 }
 
 .machine:last-child{
-    margin-bottom: 4rem;
+    margin-bottom: 8rem;
 }
 
 @media (min-width: $breakpoint-tablet){
     .machine:nth-child(2), .machine:nth-child(3) {
         border: none;
+    }
+
+    .machine:first-child, .machine:nth-child(2), .machine:nth-child(3) {
+        margin-bottom: 8rem;
+    }
+
+    .machine-title{
+        color: map-get($colors, light-blue);
+    }
+
+    .machine-link{
+        font-family: $font-body;
+        color: black;
+        display: block;
     }
 }

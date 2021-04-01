@@ -1,0 +1,56 @@
+footer {
+    background-color: map-get($colors, light-blue);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+}
+
+.logo {
+    align-self: center;
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.logo img{
+    width: 7rem;
+    height: auto;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social img {
+    width: 2rem;
+    height: auto;
+}
+
+footer p {
+    color: white;
+    text-transform: uppercase;
+    font-family: $font-body;
+}
+
+.copyright {
+    padding-bottom: 2rem;
+}
+
+@media (min-width: $breakpoint-tablet){
+
+    .logo {
+        flex-basis: 20%;
+        text-align: initial;
+    }
+
+    .logo img {
+        width: 10rem;
+    }
+
+    .copyright {
+        padding-bottom: 0;
+    }
+}
