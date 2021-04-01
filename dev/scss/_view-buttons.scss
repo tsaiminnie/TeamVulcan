@@ -30,22 +30,22 @@
     @media screen and (min-width: $breakpoint-tablet) {
 
         article.view-buttons {
-            // display: inline-block;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: row;
-            padding-top: 2rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        position: absolute;
+        display: inline;
+        bottom: 7rem;
+        right: 5.75rem;
+           
         
         .view-products {
-            // bottom: 25%;
-            // left: 50%;
-            // transform: translate(-30%, -30%);
+            margin-right: 12rem;
         }
     
         .view-services {
-            // bottom: 20rem;;
-            // left: 30%;
-            // transform: translate(-50%, -50%);
+            margin-left: 12rem;
         }
     }
     }

@@ -13,29 +13,17 @@
     <!-- end Google Fonts -->
 
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
-    <link rel="stylesheet" href="styles/styles.css?cb=1617297682173">
+    <link rel="stylesheet" href="styles/styles.css?cb=1617315275045">
 </head>
 
 <body>
 
     <header class="navbar">
-        <!-- <h1>Vulcan</h1> -->
-        <!-- Hunter -->
-        <!-- Logo and Nav -->
-        <!-- Hamburger menu(js) -->
-        <div class="logo">
+
+        <div class="toplogo">
             <img src="images/logo-white-vulcan.svg" alt="Vulcan's main logo">
         </div>
-        <!-- background image -->
-
-        <button id="button-menu" class="button-menu">
-
-	<header class="navbar">
-
-			<div class="logo">
-				<img src="images/logo-white-vulcan.svg" alt="Vulcan's main logo">
-			</div>
-			
+	
 			<button id="button-menu" class="button-menu">
 
 				<span class="button-content">
@@ -43,7 +31,6 @@
 					<span class="bar"></span>
 				</span>
 			</button>
-
 
 			<nav>
 				<ul id="main-navigation">
@@ -74,25 +61,25 @@
 
 			<h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
 
-			<div class="mySlides fade">
+			<div class="mySlides fade imgOne">
 				<img class="slideImage" src="images/header-slider-img-01.jpg" style="width:100%">
 				<!-- <div class="dot"></div> -->
 			</div>
 
-			<div class="mySlides fade">
+			<div class="mySlides fade imgTwo">
 				<img class="slideImage" src="images/header-slider-img-02.jpg" style="width:100%">
 				<!-- <div class="dot"></div> -->
 			</div>
 
-			<div class="mySlides fade">
+			<div class="mySlides fade imgThree">
 				<img class="slideImage" src="images/header-slider-img-03.jpg" style="width:100%">
 				<!-- <div class="dot"></div> -->
 			</div>
 
 			<div style="text-align: center">
-				<span class="dot dotone" onclick="currentSlide(1)"></span>
-				<span class="dot dottwo" onclick="currentSlide(2)"></span>
-				<span class="dot dotthree" onclick="currentSlide(3)"></span>
+				<span class="dot dotone" ></span>
+				<span class="dot dottwo" ></span>
+				<span class="dot dotthree" ></span>
 			</div>
 
 			<article class="view-buttons">
@@ -244,12 +231,19 @@
 		</section>
 
 		<section>
-            <iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" ></iframe>
             <p><a href="https://vimeo.com/183929811">Vulcan Industries</a> from <a href="https://vimeo.com/paradigmcreativemedia">Paradigm Creative Media, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
         </section>
 
-		<section>
-			<!-- Email/newsletter form -->
+		<section class="email-signup">
+			<p>Stay in the know. Sign up for our newsletter.</p>
+
+			<form>
+				<input class="emailInput" type="email" name="email" placeholder="Enter your email">
+				<input class="emailSubmit" type="submit" name="emailsubmit" value="Submit">
+			
+			</form>
+			
 		</section>
 
 		<section class = "map-contact">
@@ -290,7 +284,7 @@
 <script src="scripts/libs/jquery/jquery-3.4.1.min.js"></script>
 <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
 
-<script src="scripts/script.min.js?cb=1617297682173"></script>
+<script src="scripts/script.min.js?cb=1617315275045"></script>
 
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
 
