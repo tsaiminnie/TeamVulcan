@@ -20,18 +20,22 @@ body {
         padding: 0;
     }
 
+    iframe {
+        max-width: 100%;
+    }
+
+
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
     body {
-
-    
-    .slideImage {
-        height: 40rem;
+        .slideImage {
+            height: 40rem;
+        }
     }
 
 }
-}
+
 
 @media screen and (min-width: $breakpoint-tablet) {
     body {
@@ -42,4 +46,5 @@ body {
         }
 
     }
+
 }

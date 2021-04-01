@@ -1,92 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vulcan</title>
-
+    
     <!-- *** IMPORTANT *** PUT LINKS TO GOOGLE FONTS HERE -->
     <!-- Put Google Fonts Here -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <!-- end Google Fonts -->
-
+    
     <!-- *** IMPORTANT *** DO NOT DELETE OR EDIT THE NEXT LINE OF CODE - IT IS IMPORTANT FOR THE GULP BUILD PROCESS. SEE YOUR INSTRUCTOR FIRST IF YOU WANT TO EDIT OR DELETE THIS LINE -->
     <link rel="stylesheet" href="styles/styles.css?cb=1617319502545">
+
 </head>
+
 
 <body>
 
     <header class="navbar">
-
         <div class="toplogo">
             <img src="images/logo-white-vulcan.svg" alt="Vulcan's main logo">
         </div>
-	
-			<button id="button-menu" class="button-menu">
+    
+            <button id="button-menu" class="button-menu">
+                <span class="button-content">
+                    <span class="text">Menu</span>
+                    <span class="bar"></span>
+                </span>
+            </button>
+            <nav>
+                <ul id="main-navigation">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Parts</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class="dissapear"><a href="#">Installation Map</a></li>
+                    <li class="dissapear"><a href="#">Product Literature</a></li>
+                </ul>
+            </nav>
+            <div class="left">
+                <p class="lg-nav"><a href="#">Install Map</a></p>
+                <p class="lg-nav"><a href="#">Product Literature</a></p>
+            </div>
+            <div class="right">
+                <p class="lg-nav"><a href="#">+1 712-642-2755</a></p>
+                <p class="lg-nav"><a href="#">Contact Us</a></p>
+            </div>
+    </header>
 
-				<span class="button-content">
-					<span class="text">Menu</span>
-					<span class="bar"></span>
-				</span>
-			</button>
-
-			<nav>
-				<ul id="main-navigation">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Parts</a></li>
-					<li><a href="#">News</a></li>
-					<li><a href="#">Contact</a></li>
-					<li class="dissapear"><a href="#">Installation Map</a></li>
-					<li class="dissapear"><a href="#">Product Literature</a></li>
-				</ul>
-			</nav>
-
-			<div class="left">
-				<p class="lg-nav"><a href="#">Install Map</a></p>
-				<p class="lg-nav"><a href="#">Product Literature</a></p>
-			</div>
-
-			<div class="right">
-				<p class="lg-nav"><a href="#">+1 712-642-2755</a></p>
-				<p class="lg-nav"><a href="#">Contact Us</a></p>
-			</div>
-	</header>
 
 	<main>
 		<div class="slideshow-container">
-
-			<h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
-
-			<div class="mySlides fade imgOne">
-				<img class="slideImage" src="images/header-slider-img-01.jpg" style="width:100%">
-				<!-- <div class="dot"></div> -->
-			</div>
-
-			<div class="mySlides fade imgTwo">
-				<img class="slideImage" src="images/header-slider-img-02.jpg" style="width:100%">
-				<!-- <div class="dot"></div> -->
-			</div>
-
-			<div class="mySlides fade imgThree">
-				<img class="slideImage" src="images/header-slider-img-03.jpg" style="width:100%">
-				<!-- <div class="dot"></div> -->
-			</div>
-
-			<div style="text-align: center">
-				<span class="dot dotone" ></span>
-				<span class="dot dottwo" ></span>
-				<span class="dot dotthree" ></span>
-			</div>
-
-			<article class="view-buttons">
-				<button class="view-products">View Products</button>
-				<button class="view-services">View Services</button>
-			</article>
-	</div>
+            <h1>We design and fabricate indestructible wastewater screens. Enough said.</h1>
+            <div class="mySlides fade imgOne">
+                <img class="slideImage" src="images/header-slider-img-01.jpg" style="width:100%">
+                <!-- <div class="dot"></div> -->
+            </div>
+            <div class="mySlides fade imgTwo">
+                <img class="slideImage" src="images/header-slider-img-02.jpg" style="width:100%">
+                <!-- <div class="dot"></div> -->
+            </div>
+            <div class="mySlides fade imgThree">
+                <img class="slideImage" src="images/header-slider-img-03.jpg" style="width:100%">
+                <!-- <div class="dot"></div> -->
+            </div>
+            <div style="text-align: center">
+                <span class="dot dotone" ></span>
+                <span class="dot dottwo" ></span>
+                <span class="dot dotthree" ></span>
+            </div>
+            <article class="view-buttons">
+                <button class="view-products">View Products</button>
+                <button class="view-services">View Services</button>
+            </article>
+        </div>
 
 <div class = "white-wave"><img src="images/wave-white.png" alt="White wave"></div>
 
@@ -149,70 +142,66 @@
 		<section>
 			<div class = "dark-blue-wave"><img src="images/wave-blue-dark.png" alt="Dark blue wave"></div>
 		
-			<section class="form">
-				<!-- Andre -->
-				<!-- product advisor section -->
-				<div class="form-header">
-					<h2>Product Advisor</h2>
-				</div>
-				<div class="form-p">
-					<p>Find your project’s perfect fit.</p>
-				</div>
-				<hr>
-				<form action="/action_page.php">
-					<label for="select">PRODUCT TYPE</label>
-					<select name="select" id="select">
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					</select>
-					<br><br>
-				</form>
-				<form action="/action_page.php">
-					<label for="select">SCREEN LOCATION</label>
-					<select name="select" id="select">
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					</select>
-					<br><br>
-				</form>
-				<form action="/action_page.php">
-					<label for="select">FLOW TYPE</label>
-					<select name="select" id="select">
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					</select>
-					<br><br>
-				</form>
-				<form action="/action_page.php">
-					<label for="form">CHANNEL DEPTH</label>
-					<select name="form" id="cars">
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					</select>
-					<br><br>
-				</form>
-				<form action="/action_page.php">
-					<label for="select">CHANNEL WIDTH</label>
-					<select name="select" id="select">
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					  <option value="select">SELECT</option>
-					</select>
-					<br><br>
-				</form>
+<section class="form-section">
+                <div class="form-header">
+                    <h2>Product Advisor</h2>
+                </div>
+                <div class="form-p">
+                    <p>Find your project’s perfect fit.</p>
+                </div>
+                <hr>
+                <form class="form" action="/">
+                    <div class="actual-form">
+                        <div class="flex-item">
+                            <label for="select">PRODUCT TYPE</label>
+                            <select name="select" id="select">
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                    </select>
+                        </div>
+                        <div class="flex-item">
+                            <label for="select">SCREEN LOCATION</label>
+                            <select name="select" id="select">
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                    </select>
+                        </div>
+                        <div class="flex-item">
+                            <label for="select">FLOW TYPE</label>
+                            <select name="select" id="select">
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                    </select>
+                        </div>
+                        <div class="flex-item">
+                            <label for="form">CHANNEL DEPTH</label>
+                            <select name="form" id="cars">
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                    </select>
+                        </div>
+                        <div class="flex-item">
+                            <label for="select">CHANNEL WIDTH</label>
+                            <select name="select" id="select">
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                      <option value="select">SELECT</option>
+                    </select>
+                        </div>
+                    </div>
+                    <input class="submit" value="Find My Product"> 
+                </form>
+            </section>
 
-            <button>Find My Product</button>
-
-        </section>
 
 
 		<section class = "about-us">
@@ -231,20 +220,19 @@
 		</section>
 
 		<section>
-            <iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" ></iframe>
+            <iframe src="https://player.vimeo.com/video/183929811?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
             <p><a href="https://vimeo.com/183929811">Vulcan Industries</a> from <a href="https://vimeo.com/paradigmcreativemedia">Paradigm Creative Media, Inc.</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
         </section>
 
 		<section class="email-signup">
-			<p>Stay in the know. Sign up for our newsletter.</p>
-
-			<form>
-				<input class="emailInput" type="email" name="email" placeholder="Enter your email">
-				<input class="emailSubmit" type="submit" name="emailsubmit" value="Submit">
-			
-			</form>
-			
-		</section>
+            <p>Stay in the know. Sign up for our newsletter.</p>
+            <form>
+                <input class="emailInput" type="email" name="email" placeholder="Enter your email">
+                <input class="emailSubmit" type="submit" name="emailsubmit" value="Submit">
+            
+            </form>
+            
+        </section>
 
 		<section class = "map-contact">
 
@@ -269,13 +257,13 @@
 			<img src="images/logo-white-vulcan.svg" alt="Vulcan's main logo">
 		</div>
 		<div class = "footer-info">
-		<div class="social">
-			<img src="images/icon-white-facebook.png" alt="Facebook logo">
-			<img src="images/icon-white-linkedin.png" alt="LinkedIn logo">
-		</div>
-		<div class="phone"><p>+1 712-642-2755</p></div>
-		<div class="contact-us"></div><p>Contact Us</p></div>
-		<p class = "copyright">Copyright 2017. All rights reserved</p>
+			<div class="social">
+				<a href="/"><img src="images/icon-white-facebook.png" alt="Facebook logo"></a>
+				<a href="/"><img src="images/icon-white-linkedin.png" alt="LinkedIn logo"></a>
+			</div>
+			<div class="phone"><p>+1 712-642-2755</p></div>
+			<div class="contact-us"><p>Contact Us</p></div>
+			<div class = "copyright"><p>Copyright 2017. All rights reserved</p></div>
 		</div>
 	</footer>
 
@@ -288,6 +276,9 @@
 
 <!-- *** IMPORTANT *** DO NOT ADD ADDITIONAL SCRIPT LINKS HERE...If you want to add additional scripts simply save the script files to the "dev/scripts" directory (for your custom scripts) and the 'dev/scripts/libs' directory for any jQuery plugins or other JavaScript libraries and Gulp will concatenate and minify them into the "script.min.js" file above. See the project instructions for details -->	
 
+    
+
 </body>
+
 
 </html>
