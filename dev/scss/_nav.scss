@@ -31,13 +31,11 @@ nav {
         margin: 0;
         list-style: none;
         background-color: map-get($colors, dark-grey);
-
     }
 
     .main-navigation {
         position: relative;
     }
-
 }
 
 nav.activated {

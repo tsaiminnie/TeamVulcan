@@ -20,6 +20,12 @@ header {
         visibility: collapse;
     }
 
+    .icon-mail-circled,
+    .icon-phone-circled {
+        color: map-get($colors, bright-white);
+        visibility: hidden;
+    }
+
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
@@ -58,6 +64,15 @@ header {
         text-transform: uppercase;
         padding: 0 1rem;
     }
+
+    header {
+
+        .icon-mail-circled,
+        .icon-phone-circled {
+            visibility: visible;
+        }
+
+    }
 }
 
 @media screen and (min-width: $breakpoint-desktop) {
@@ -65,7 +80,4 @@ header {
         width: 15rem;
         height: auto;
     }
-
-
 }
-

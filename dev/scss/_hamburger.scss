@@ -1,5 +1,5 @@
 .button-menu {
-    margin: 0.5rem;
+    margin: 1.5rem 1rem;
     display: block;
     width: 60px;
     background-color: transparent;
@@ -7,7 +7,6 @@
     padding: none;
     position: absolute;
     right: 0;
-
 
     .button-content {
         display: block;
@@ -58,9 +57,7 @@
         position: absolute;
         transition: all 0.3s ease-in-out;
     }
-
 }
-
 
 .button-menu:focus {
     outline: none;
