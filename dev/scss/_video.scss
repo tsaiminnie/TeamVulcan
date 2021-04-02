@@ -1,0 +1,18 @@
+.video {
+    height: 60vh;
+    background-color: map-get($colors, light-blue);
+    padding: 2rem;
+    position: relative;
+
+    iframe {
+        background-color: green ;
+        width: 85%;
+        border-left: 1rem solid green;
+        border-right: 1rem solid green;
+        border: 1rem solid map-get($colors, dark-blue);
+        position: absolute;
+        top: 7rem;
+        margin: 0 auto;
+        // box-shadow: 0 0 0 10px green, 0 0 0 20px map-get($colors, dark-blue);
+    }
+}
