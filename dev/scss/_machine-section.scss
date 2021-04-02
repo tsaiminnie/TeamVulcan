@@ -45,12 +45,6 @@
     // position: relative;
 }
 
-.machine::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
 
 .machine-image img {
     width: 80%;
