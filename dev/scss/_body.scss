@@ -27,18 +27,21 @@ body {
         max-width: 100%;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0ad2bad32b77ca5b7264e6ad6a0a5d5ddc1b74bf
 }
 
 @media screen and (min-width: $breakpoint-tablet) {
     body {
-
-    
-    .slideImage {
-        height: 40rem;
+        .slideImage {
+            height: 40rem;
+        }
     }
 
 }
-}
+
 
 @media screen and (min-width: $breakpoint-tablet) {
     body {
@@ -49,4 +52,5 @@ body {
         }
 
     }
+
 }
