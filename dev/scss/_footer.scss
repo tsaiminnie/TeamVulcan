@@ -1,10 +1,17 @@
 footer {
     background-color: map-get($colors, light-blue);
-    height: 10rem;
+    height: auto;
+    padding-bottom: 2rem;
+
+    .icon-mail-circled,
+    .icon-phone-circled {
+        color: map-get($colors, bright-white);
+        visibility: visible;
+    }
 }
 
 .logo {
-    align-self: center;
+    // align-self: center;
     text-align: center;
 }
 
@@ -13,50 +20,71 @@ footer {
     height: auto;
 }
 
-// .footer-info {
-//     display: flex;
-//     justify-items: space-between;
-//     align-items: center;
-// }
+.footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
 .social img {
-    width: 2rem;
+    width: 1.4rem;
     height: auto;
 }
 
 .social a {
+    display: inline-block;
+    // width: 2rem;
     padding: 5px;
+    position: relative;
+    top: 8px;
 }
+
+// .social, .phone, .contact-us, .copyright {
+//     flex: 0 1 auto;
+// }
+
+// .icon-phone-circled, .icon-mail-circled {
+//     visibility: visible;
+// }
 
 footer p {
     color: white;
     text-transform: uppercase;
     font-family: $font-body;
-    padding: 5px;
+    padding: 12px;
+    font-size: 0.8rem;
 }
 
-// .copyright {
-//     padding-bottom: 2rem;
-// }
+@media (min-width: 375px){
+    footer p {
+        font-size: 1rem;
+    }
 
-@media (min-width: $breakpoint-tablet){
-    // .copyright p{
-    //     padding-bottom: 2rem;
-    // }
+    .social img {
+        width: 2rem;
+    }
+}
+
+
+
+@media (min-width: 695px){
 
     footer {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 3rem;
+    padding-right: 3rem;
     }
-
+// Footer info flex-end or center?
     .footer-info {
         display: flex;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
     }
 
     .logo {
@@ -67,7 +95,12 @@ footer p {
         width: 10rem;
     }
 
-    // .copyright {
-    //     padding-bottom: 0;
-    // }
+}
+
+@media (min-width: $breakpoint-desktop){
+    footer {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
 }
