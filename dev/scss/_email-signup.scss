@@ -2,11 +2,10 @@
     background-color: map-get($colors, sky-blue);
     height: 8rem;
     padding: 3rem 1rem;
-    // change height to viewheightonce javascript is fixed?
 
     p {
         font-family: $font-body;
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-align: center;
         color: map-get($colors, dark-blue);
         padding-bottom: 1rem;
@@ -21,10 +20,11 @@
 
     .emailInput {
         border: none;
-        height: 3rem;
-        width: 25rem;
+        height: 2.5rem;
+        width: 20rem;
         font-size: 1rem;
         padding-left: 1rem;
+        margin-right: 1rem;;
     }
 
     .emailSubmit {
@@ -32,12 +32,55 @@
         color: white;
         text-transform: uppercase;
         border: none;
-        padding: 0.5rem;
+        padding: 0 0.5rem;
         width: 10rem;
-        height: 3rem;
-        font-size: 1.75rem;
+        height: 2.5rem;
+        font-size: 1.25rem;
         font-family: $font-body;
         font-weight: bold;
 
+
+    }
+}
+
+@media screen and (min-width: $breakpoint-tablet) {
+    .email-signup {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 1rem 0 1rem;
+
+        p {
+            padding: 1.5rem 0;
+            margin: 0;
+        }
+    
+        .emailInput {
+            width: 17rem;
+            margin: 0 1rem;
+        }
+
+        form {
+            margin: 0;
+        }
+    } 
+}
+
+@media screen and (min-width: $breakpoint-desktop) {
+    .email-signup {
+        padding: 3rem 1rem 0 1rem;
+
+        p {
+            font-size: 2rem;
+        }
+
+        .emailInput {
+            height: 3.5rem;
+            font-size: 1.5rem;
+        }
+
+        .emailSubmit {
+            height: 3.5rem;
+            font-size: 2rem;
+        }
     }
 }
