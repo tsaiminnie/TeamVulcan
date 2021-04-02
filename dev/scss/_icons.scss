@@ -59,16 +59,3 @@
   .icon-mail-circled:before { content: '\e800'; } /* '' */
   .icon-phone-circled:before { content: '\e801'; } /* '' */
 
-  
-.icon-mail-circled,
-.icon-phone-circled {
-    color: map-get($colors, bright-white);
-    visibility: hidden;
-}
-
-@media screen and (min-width: $breakpoint-tablet) {
-    .icon-mail-circled,
-    .icon-phone-circled {
-        visibility: visible;
-    }
-}
