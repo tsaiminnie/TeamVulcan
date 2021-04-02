@@ -1,108 +1,137 @@
-input {
-    width: 100%;
-    height: 5rem;
-    padding: auto 1.5rem;
-    font-size: 2rem;
-    font-family: $font-header;
-    text-transform: uppercase;
-    background: map-get($colors, cerulean-blue);
-    margin: 0 auto;
-    color: map-get($colors, bright-white);
-    border: solid white 1px;
-    position: relative;
-}
+.form {
+    background-color: #154a66;
+    font-family: $font-body;
 
-.form-header {
-    font-family: $font-header;
-    font-size: 2rem;
-    text-align: center;
-    color: map-get($colors, bright-white);
-}
-
-
-.form-p{
-    font-size: 1rem;
-    margin-bottom: 10%;
-    text-align: center;
-}
-
-@media only screen and ( min-width:$breakpoint-mobile) {
-    .form-section {
+    .form-header {
         font-family: $font-header;
-        padding: 5rem;
-        background-color: #154a66;
-        font-size: 1rem;
-        text-align: left;
+        font-size: 2rem;
+        text-align: center;
         color: map-get($colors, bright-white);
-        font-weight: bold;
+        padding-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    .item {
+        font-family: $font-header;
+        color: map-get($colors, bright-white);
+        display: flex;
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+
+    .form-p {
+        color: map-get($colors, bright-white);
+        font-size: 1rem;
+        margin-bottom: 10%;
+        text-align: center;
+    }
+
+    .select {
+        font-size: 1.5rem;
+        width: 95%;
+    }
+
+    select.select {
+        padding: 1rem 0;
+    }
+
+    option {
+        margin: 0;
+        padding: 0;
+    }
+
+    button {
+        width: 95%;
+        background-color: map-get($colors, light-blue);
+        border: none;
+        text-transform: uppercase;
+        font-family: $font-body;
+        color: map-get($colors, bright-white);
+        font-size: 1rem;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    @media only screen and ( min-width:$breakpoint-mobile) {
+        .form-section {
+            font-family: $font-header;
+            padding: 5rem;
+            font-size: 1rem;
+            text-align: left;
+            color: map-get($colors, bright-white);
+            font-weight: bold;
+            width: 100%;
+        }
+
+        .item {
+            width: 20rem;
+        }
+
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .select:hover,
+        .select:focus {
+            background-color: gray;
+        }
+    }
+
+    @media only screen and ( min-width:$breakpoint-tablet) {
+        form {
+            font-family: $font-header;
+            background-color: #154a66;
+            font-size: 1rem;
+            text-align: left;
+            color: map-get($colors, bright-white);
+            font-weight: bold;
+        }
+        .actual-form {
+            text-align: left;
+            display: flex;
+            //flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        select:hover,
+        select:focus {
+            background-color: gray;
+        }
+    }
+
+    .form {
+
+    font-family: $font-header;
+    padding: 5rem;
+    background-color: #154a66;
+    font-size: 1rem;
+    text-align: left;
+    color: map-get($colors, bright-white);
+    font-weight: bold;  
+
+    }
+
+    .select {
+        font-size: 1rem;
+        font-family: $font-header;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: 10%;
+        padding: 25px 100px;
+    }
+
+    .actual-form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100%;
     }
-    select {
-        display: flex;
-        flex-direction: row-reverse;
-        font-size: 1rem;
-        font-family: $font-header;
-        text-align: left;
-        margin-top: 2%;
-    }
+
     select:hover,
     select:focus {
         background-color: gray;
     }
-}
-
-@media only screen and ( min-width:$breakpoint-tablet) {
-    form {
-        font-family: $font-header;
-        background-color: #154a66;
-        font-size: 1rem;
-        text-align: left;
-        color: map-get($colors, bright-white);
-        font-weight: bold;
-    }
-    .actual-form {
-        text-align: left;
-        display: flex;
-        //flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    select:hover,
-    select:focus {
-        background-color: gray;
-    }
-}
-
-.form {
-
-font-family: $font-header;
-   padding: 5rem;
-   background-color: #154a66;
-   font-size: 1rem;
-   text-align: left;
-   color: map-get($colors, bright-white);
-   font-weight: bold;  
-
-}
-
-select {
-    font-size: 1rem;
-    font-family: $font-header;
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: 10%;
-    padding: 25px 100px;
-}
-
-.actual-form {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-}
-
-select:hover,
-select:focus {
-    background-color: gray;
 }
