@@ -39,38 +39,35 @@
 .machine {
     max-width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-top: 2rem;
+    padding: 1rem;
     // position: relative;
 }
 
-.machine-image {
-    // margin-right: 2rem;
-    // width: 25%;
+.machine::after{
+    content: "";
+    clear: both;
+    display: table;
 }
 
-
-.machine-info {
-    // margin-left: 2rem;
-}
 
 .machine-image img {
-    width: 70%;
+    width: 80%;
+}
+
+.machine-info {
+    width: 20%;
 }
 
 
 
-
-// .img-machine {
-//     width: 200px;
-// }
 
 .machine-title {
     color: map-get($colors, dark-grey);
     font-family: $font-header;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 1.2em;
     width: auto;
     // margin-left: 1rem;
     align-self: center;
