@@ -25,35 +25,37 @@ footer {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    margin: 1rem auto;
 }
 
 .social img {
-    width: 1.4rem;
+    width: 1.6rem;
     height: auto;
 }
 
 .social a {
     display: inline-block;
-    // width: 2rem;
-    padding: 5px;
     position: relative;
-    top: 8px;
+    height: 1.6rem;
+    width: 1.6rem;
 }
 
-// .social, .phone, .contact-us, .copyright {
-//     flex: 0 1 auto;
-// }
+.phone, .contact-us {
+    display: inline-flex;
+    align-items: center;
+}
 
-// .icon-phone-circled, .icon-mail-circled {
-//     visibility: visible;
-// }
+
 
 footer p {
     color: white;
     text-transform: uppercase;
     font-family: $font-body;
-    padding: 12px;
     font-size: 0.8rem;
+}
+
+.copyright {
+    padding-top: 1rem;
 }
 
 @media (min-width: 375px){
@@ -64,27 +66,30 @@ footer p {
     .social img {
         width: 2rem;
     }
+
+    .social a {
+        margin: 5px;
+    }
 }
 
 
 
-@media (min-width: 695px){
+@media (min-width: 640px){
 
     footer {
     display: flex;
-    // flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin: 0 auto;
     padding-left: 3rem;
     padding-right: 3rem;
     }
-// Footer info flex-end or center?
+
     .footer-info {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
-        justify-content: flex-end;
+        justify-content: center;
+        flex: 0 1 auto;
     }
 
     .logo {
@@ -95,12 +100,28 @@ footer p {
         width: 10rem;
     }
 
+    .phone, .contact-us {
+        margin-left: 1rem;
+    }
+
 }
 
-@media (min-width: $breakpoint-desktop){
+@media (min-width: 928px){
+    .copyright {
+        margin-left: 2rem;
+        padding-top: 0;
+    }
+}
+
+@media (min-width: 1100px){
     footer {
-        padding-left: 7rem;
-        padding-right: 7rem;
+        justify-content: space-between;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .footer-info {
+        margin: 0;
     }
 
 }
