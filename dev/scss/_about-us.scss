@@ -7,8 +7,12 @@
     width: 100vw;
     object-fit:cover;
     display: block;
+    max-width: 100%;
+    overflow-x: hidden;
+
 
 }
+
 
 
 // .about-us-overlay {

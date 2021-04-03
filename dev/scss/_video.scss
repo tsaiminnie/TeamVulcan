@@ -1,3 +1,6 @@
+
+@media screen and (max-width: 1920px) and (min-width: 601px), (min-width: 1100px) {
+
 .video {
     height: 60vh;
     background-color: map-get($colors, light-blue);
@@ -5,14 +8,41 @@
     position: relative;
 
     iframe {
-        background-color: green ;
-        width: 85%;
-        border-left: 1rem solid green;
-        border-right: 1rem solid green;
-        border: 1rem solid map-get($colors, dark-blue);
-        position: absolute;
-        top: 7rem;
-        margin: 0 auto;
+
+        position: relative;
+        top: 3rem;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: 1rem solid #154a66;
+        background-color:green;
         // box-shadow: 0 0 0 10px green, 0 0 0 20px map-get($colors, dark-blue);
     }
 }
+}
+
+@media screen and (min-width: 0px)and (max-width: 600px) {
+
+    .video {
+        height: 60vh;
+        background-color: map-get($colors, light-blue);
+        padding: 2rem;
+        position: relative;
+    
+    
+        iframe {
+            margin-left: auto;
+            margin-right: 100px;
+            background-color: green ;
+            height: 200px;
+            border: 1rem solid map-get($colors, dark-blue);
+            position: relative;
+            top: 7rem;
+            
+            // box-shadow: 0 0 0 10px green, 0 0 0 20px map-get($colors, dark-blue);
+        }
+    }
+
+}
+
+
