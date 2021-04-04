@@ -4,6 +4,10 @@ header {
     position: absolute;
     z-index: 10;
     width: 100%;
+    
+    a:hover {
+        background-color: map-get($colors, light-blue);
+    }
 
     img {
         width: 7rem;

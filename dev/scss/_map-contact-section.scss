@@ -7,7 +7,9 @@
 .map-image {
     height: 30rem;
     width: 100vw;
-    display: block;   
+    display: block;
+    object-fit: none;
+    object-position: center;   
 }
 
 .map-text{
@@ -98,4 +100,14 @@
        flex-direction: row-reverse;
    }
 
+}
+
+@media (min-width: $breakpoint-desktop){
+    .map-flex-item {
+        width: 50%;
+    }
+
+    .contact-flex-item {
+        width: 50%;
+    }
 }
