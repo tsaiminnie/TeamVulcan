@@ -1,8 +1,7 @@
-.form {
-    background-color: #154a66;
-    font-family: $font-body;
-
-    .form-header {
+.form-section {       
+        
+        .form-header {
+        background-color: #154A66;
         font-family: $font-header;
         font-size: 2rem;
         text-align: center;
@@ -10,48 +9,88 @@
         padding-bottom: 1rem;
         text-transform: uppercase;
     }
+     .form-p {
+        background-color: #154A66;
+        font-family: $font-body;
+        color: map-get($colors, bright-white);
+        font-size: 1rem;
+        padding-bottom:20px;
+        text-align: center;
+    }
 
+    hr {
+        background-color: white;
+        border: 0;
+        height: 1px;
+        margin: 0 1rem;
+        border-width: 6px;
+    }
+
+    .form {
+    padding-top: 1rem;
+    background-color: #154A66;
+    font-family: $font-body;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     .item {
         font-family: $font-header;
         color: map-get($colors, bright-white);
         display: flex;
         flex-direction: column;
         padding-left: 1rem;
-        width: 19rem;
+        width: 28rem;
     }
 
-    .form-p {
-        color: map-get($colors, bright-white);
-        font-size: 1rem;
-        margin-bottom: 10%;
+    input {
         text-align: center;
+        width: 90%;
+        height: 3rem;
+        font-size: 1.25rem;
+        font-family: $font-body;
+        text-transform: uppercase;
+        background-color: #009DDC;
+        border: none;
+        color: map-get($colors, bright-white);
+        position:relative;
+        margin: 0 auto 2rem;
     }
 
     .select {
         font-size: 1.5rem;
         width: 95%;
+        background-color: map-get($colors, light-grey);
+        font-family: $font-header;
+        text-align: center;
+        margin-top: 4%;
+        margin-bottom: 10%;
+        padding: 25px 100px;
     }
 
     select.select {
         padding: 1rem 0;
+        max-width: 100%;
+        text-align: left;
+        padding-left: 1rem;
+        color: map-get($colors, dark-grey);
     }
+
+    .select:hover,
+    .select:focus {
+        background-color: map-get($colors, bright-white);
+    }   
 
     option {
         margin: 0;
         padding: 0;
     }
 
-    button {
-        width: 95%;
-        background-color: map-get($colors, light-blue);
-        border: none;
-        text-transform: uppercase;
-        font-family: $font-body;
-        color: map-get($colors, bright-white);
-        font-size: 1rem;
-        padding: 1rem;
-        margin: 1rem;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
+
 
     @media only screen and ( min-width:$breakpoint-mobile) {
         .form-section {
@@ -62,94 +101,41 @@
             color: map-get($colors, bright-white);
             font-weight: bold;
             width: 100%;
-            
+        }
+        .item {
+            width: 25rem;
+            flex-wrap: wrap;
         }
 
-        .item {
-            width: 19rem;
-            display:flex;
-            
-            
-            
-        }
-        .wrapper {
-            display: flex;
-            flex-wrap: wrap;
+        .form {
             justify-content: center;
         }
 
-        .select:hover,
-        .select:focus {
-            background-color: gray;
-        }
     }
-
     @media only screen and ( min-width:$breakpoint-tablet) {
         form {
             font-family: $font-header;
-            background-color: #154a66;
+            background-color: #154A66;
             font-size: 1rem;
             text-align: left;
             color: map-get($colors, bright-white);
             font-weight: bold;
             display:flex;
-           
-            
-            
-            
-        }
-        .actual-form {
-            text-align: left;
-            display: flex;            
             flex-wrap: wrap;
-            justify-content: space-between;
-           
-            
-            
-        
         }
-        select:hover,
-        select:focus {
-            background-color: gray;
-        }
-        
-        
-        
-
-        
     }
 
-    .form {
 
-    font-family: $font-header;
-    padding: 5rem;
-    background-color: #154a66;
-    font-size: 1rem;
-    text-align: left;
-    color: map-get($colors, bright-white);
-    font-weight: bold;  
-
+@media (min-width: $breakpoint-desktop){
+    .item {
+        width: 23rem;
     }
 
-    .select {
-        font-size: 1rem;
-        font-family: $font-header;
-        text-align: center;
-        margin-top: 4%;
-        margin-bottom: 10%;
-        padding: 25px 100px;
+    input {
+        width: 95%;
     }
+}
 
-    .actual-form {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 100%;
-    }
 
-    select:hover,
-    select:focus {
-        background-color: gray;
     }
 }
